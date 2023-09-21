@@ -15,7 +15,7 @@ require('dotenv').config();
 
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:3000"],
+  origin: ["https://smart-sign.netlify.app"],
   method: ["GET", "POST"],
   credentials: true,
 }));
