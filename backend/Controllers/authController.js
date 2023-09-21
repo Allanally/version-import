@@ -56,6 +56,7 @@ module.exports.login = async (req, res, next) => {
        maxAge: maxAge * 1000,
    } );
    res.status(200).json({user: user._id, created: true})
+    console.log("Cookie Created")
    }catch(err) {
      console.log(err);
      const errors = handleErrors(err);
